@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fitness Tracker</h1>
+        <div id="exerciseForm">
+            <input type="text" id="exerciseName" placeholder="Exercise Name">
+            <input type="number" id="exerciseDuration" placeholder="Duration (minutes)">
+            <input type="number" id="exerciseCalories" placeholder="Calories Burned">
+            <button onclick="logExercise()">Log Exercise</button>
+        </div>
+        <div id="mealForm">
+            <input type="text" id="mealName" placeholder="Meal Name">
+            <input type="number" id="mealCalories" placeholder="Calories Consumed">
+            <button onclick="logMeal()">Log Meal</button>
+        </div>
+        <div id="chartContainer">
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
